@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"
+            type="text/javascript"></script>
     @Styles.Render("~/Content/BO/kendo")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/BO/kendo")
@@ -52,70 +54,6 @@
                 return /(.*\/)[^\/]*$/gi.exec(url)[1];
             }
 
-            $("#dimensions").kendoDropDownList({
-                dataTextField: "text",
-                dataValueField: "value",
-                value: "common-bootstrap",
-                dataSource: [
-                    { text: "Default", value: "common" },
-                    { text: "Bootstrap", value: "common-bootstrap" }
-                ],
-                change: function(e) {
-                    var commonLink = Application.getCurrentCommonLink();
-                    Application.updateLink(commonLink, Application.getCommonUrl(this.value()));
-                }
-            });
-
-            $("#theme").kendoDropDownList({
-                dataTextField: "text",
-                dataValueField: "value",
-                value: "bootstrap",
-                dataSource: [
-                    { text: "Default", value: "default" },
-                    { text: "Blue Opal", value: "blueopal" },
-                    { text: "Bootstrap", value: "bootstrap" },
-                    { text: "Silver", value: "silver" },
-                    { text: "Uniform", value: "uniform" },
-                    { text: "Metro", value: "metro" },
-                    { text: "Black", value: "black" },
-                    { text: "Metro Black", value: "metroblack" },
-                    { text: "High Contrast", value: "highcontrast" },
-                    { text: "Moonlight", value: "moonlight" },
-                    { text: "Flat", value: "flat" }
-                ],
-                change: function(e) {
-                    theme = this.value();
-                    Application.changeTheme(theme, true);
-                    initCharts(theme);
-                }
-            });
-
-            function changeFontSize(e) {
-                var value = $("#font-size").kendoDropDownList("value");
-
-                $("body").css("font-size", value + "px");
-            }
-
-            $("#font-size").kendoDropDownList({
-                dataTextField: "text",
-                dataValueField: "value",
-                value: 14,
-                height: 204,
-                dataSource: [
-                    { text: "10px", value: 10 },
-                    { text: "12px", value: 12 },
-                    { text: "14px", value: 14 },
-                    { text: "16px", value: 16 },
-                    { text: "18px", value: 18 },
-                    { text: "20px", value: 20 }
-                ],
-                change: changeFontSize
-            });
-
-            changeFontSize();
-
-            $("#theme-list, #dimensions-list, #font-size-list").addClass("ra-list");
-
             $("#configure").on("click", function(e) {
                 $("#configurator-wrap").toggleClass("hidden-xs");
                 e.preventDefault();
@@ -125,6 +63,7 @@
                 .find("select:not([multiple])").kendoDropDownList().end()
                 .find("select[multiple]").kendoMultiSelect().end()
                 .find("input:not([type])").addClass("k-textbox").end()
+                .find("input[role=listbox]").hide().end()
                 .find("textarea").addClass("k-textbox").end()
                 .find("input[type=date]").kendoDatePicker().end()
                 .find("input[type=number]").kendoNumericTextBox({

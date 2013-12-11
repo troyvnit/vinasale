@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
@@ -58,7 +59,7 @@ namespace VinaSale.DAL
 
         public virtual void Insert(TEntity entity)
         {
-            dbSet.Add(entity);
+            dbSet.AddOrUpdate(entity);
         }
 
         public virtual void Delete(object id)
