@@ -18,8 +18,11 @@ namespace VinaSale.Models.ViewModels
         public string PostTags { get; set; }
         public string ContactInfo { get; set; }
         public string Address { get; set; }
-        public int Latitude { get; set; }
-        public int Longitude { get; set; }
+        public float Latitude { get; set; }
+        public float Longitude { get; set; }
+        public int Priority { get; set; }
+        public PostSize PostSize { get; set; }
+        public PostType PostType { get; set; }
         public bool IsActived { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }

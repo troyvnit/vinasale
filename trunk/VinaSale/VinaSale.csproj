@@ -151,6 +151,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\EventController.cs" />
     <Compile Include="Controllers\BO\EventBOController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageBrowserController.cs" />
@@ -164,9 +165,9 @@
     <Compile Include="Mappers\AutoMapperConfiguration.cs" />
     <Compile Include="Mappers\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Mappers\ViewModelToDomainMappingProfile.cs" />
-    <Compile Include="Migrations\201312010334451_VNS.cs" />
-    <Compile Include="Migrations\201312010334451_VNS.Designer.cs">
-      <DependentUpon>201312010334451_VNS.cs</DependentUpon>
+    <Compile Include="Migrations\201312050512481_VNS.cs" />
+    <Compile Include="Migrations\201312050512481_VNS.Designer.cs">
+      <DependentUpon>201312050512481_VNS.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Event.cs" />
@@ -188,8 +189,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\bootstrap-tagsinput-angular.js" />
+    <Content Include="Content\bootstrap-tagsinput.css" />
+    <Content Include="Scripts\bootstrap-tagsinput.js" />
+    <Content Include="Scripts\bootstrap-tagsinput.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Scripts\maps.js" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\Black\editor.png" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\Black\imagebrowser.png" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\Black\loading-image.gif" />
@@ -357,7 +363,6 @@
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\Uniform\slider-v.gif" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\Uniform\sprite.png" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\Uniform\sprite_2x.png" />
-    <Content Include="ViewLibraries\kendo\Content\2013.3.1119\bootstrap.min.css" />
     <Content Include="ViewLibraries\kendo\Content\2013.3.1119\Bootstrap\editor.png" />
     <Content Include="ViewLibraries\kendo\Content\2013.3.1119\Bootstrap\imagebrowser.png" />
     <Content Include="ViewLibraries\kendo\Content\2013.3.1119\Bootstrap\loading-image.gif" />
@@ -378,6 +383,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\images\kendoui.ttf" />
     <Content Include="ViewLibraries\kendo\Content\2013.2.918\images\kendoui.woff" />
+    <Content Include="Content\bootstrap-tagsinput.less" />
+    <Content Include="Scripts\bootstrap-tagsinput.min.js.map" />
     <None Include="Properties\PublishProfiles\VNS.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -485,7 +492,6 @@
     <Content Include="ViewLibraries\kendo\Scripts\2013.2.918\kendo.web.min.js" />
     <Content Include="ViewLibraries\kendo\Scripts\2013.2.918\kendo.window.min.js" />
     <Content Include="Scripts\kendo.modernizr.custom.js" />
-    <Content Include="ViewLibraries\kendo\Scripts\2013.3.1119\bootstrap.min.js" />
     <Content Include="ViewLibraries\kendo\Scripts\2013.3.1119\cultures\kendo.culture.vi-VN.min.js" />
     <Content Include="ViewLibraries\kendo\Scripts\2013.3.1119\cultures\kendo.culture.vi.min.js" />
     <Content Include="ViewLibraries\kendo\Scripts\2013.3.1119\kendo.all.min.js" />
@@ -552,8 +558,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201312010334451_VNS.resx">
-      <DependentUpon>201312010334451_VNS.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201312050512481_VNS.resx">
+      <DependentUpon>201312050512481_VNS.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -17,8 +17,11 @@ namespace VinaSale.Models
         public string PostTags { get; set; }
         public string ContactInfo { get; set; }
         public string Address { get; set; }
-        public int Latitude { get; set; }
-        public int Longitude { get; set; }
+        public float Latitude { get; set; }
+        public float Longitude { get; set; }
+        public int Priority { get; set; }
+        public PostSize PostSize { get; set; }
+        public PostType PostType { get; set; }
         public bool IsActived { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
@@ -27,5 +30,13 @@ namespace VinaSale.Models
         public ICollection<Comment> Comments { get; set; }
         public ICollection<Like> Likes { get; set; }
         public ICollection<Media> Medias { get; set; }
+    }
+    public enum PostSize
+    {
+        Small, Medium, Large
+    }
+    public enum PostType
+    {
+        Discount, News, Advertisement, Introduction
     }
 }

@@ -33,9 +33,11 @@ namespace VinaSale.Controllers.BO
         }
 
         // GET: /AdminPostBO/Create
-        public ActionResult Create()
+        public ActionResult Create(int? id)
         {
-            return View();
+            if (id == null) return View(new EventVM());
+            var existEvent = Mapper.Map<Event, EventVM>(unitOfWork.EventRepository.GetByID((int) id)) ?? new EventVM();
+            return View(existEvent);
         }
 
         // POST: /AdminPostBO/Create
@@ -43,7 +45,7 @@ namespace VinaSale.Controllers.BO
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PostId,UserId,PostName,PostShortDescription,PostDescription,PostAvatar,CreatedDate,UpdatedDate")] EventVM eventVM)
+        public ActionResult Create(EventVM eventVM)
         {
             if (ModelState.IsValid)
             {

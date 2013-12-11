@@ -28,13 +28,16 @@ namespace VinaSale
                       "~/Content/site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/BO/kendo").Include(
-                        "~/ViewLibraries/kendo/Scripts/2013.3.1119/bootstrap.min.js",
+                        "~/Scripts/bootstrap.min.js",
+                        "~/Scripts/bootstrap-tagsinput.min.js",
+                        "~/Scripts/maps.js",
                         "~/ViewLibraries/kendo/Scripts/2013.3.1119/kendo.all.min.js",
                         "~/ViewLibraries/kendo/Scripts/2013.3.1119/kendo.aspnetmvc.min.js",
                         "~/ViewLibraries/kendo/Scripts/2013.3.1119/cultures/kendo.culture.vi-VN.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/BO/kendo").Include(
-                      "~/ViewLibraries/kendo/Content/2013.3.1119/bootstrap.min.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/bootstrap-tagsinput.css",
                       "~/ViewLibraries/kendo/Content/2013.3.1119/kendo.common-bootstrap.min.css",
                       "~/ViewLibraries/kendo/Content/2013.3.1119/kendo.bootstrap.min.css",
                       "~/ViewLibraries/kendo/Content/2013.3.1119/styles.css"));
