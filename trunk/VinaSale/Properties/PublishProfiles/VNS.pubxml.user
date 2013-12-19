@@ -112,7 +112,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/18/2013 17:03:58</publishTime>
     </File>
     <File Include="bin/VinaSale.dll">
-      <publishTime>12/05/2013 17:00:41</publishTime>
+      <publishTime>12/17/2013 09:51:34</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>11/27/2013 23:18:35</publishTime>
@@ -2713,7 +2713,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/01/2013 23:27:54</publishTime>
     </File>
     <File Include="Views/EventBO/Create.cshtml">
-      <publishTime>12/05/2013 16:58:45</publishTime>
+      <publishTime>12/17/2013 09:34:24</publishTime>
     </File>
     <File Include="Views/EventBO/Index.cshtml">
       <publishTime>12/05/2013 17:00:18</publishTime>
@@ -2725,7 +2725,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/27/2013 23:18:29</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>11/28/2013 17:17:11</publishTime>
+      <publishTime>12/17/2013 09:51:02</publishTime>
     </File>
     <File Include="Views/Shared/EditorTemplates/Currency.cshtml">
       <publishTime>11/28/2013 13:48:54</publishTime>

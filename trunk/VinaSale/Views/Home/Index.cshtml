@@ -1,62 +1,75 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_FOLayout.cshtml";
 }
 
-@section featured {
-    <div class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-            </p>
+
+
+<div id="content">
+    @for (int i = 1; i < 19; i++)
+{
+    var url = "/UserFiles/Images/Agra-" + i + ".jpg";
+    <div class="box">
+        <div class="box-arrow">
+
+            <div class="box-footer">
+                <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash4/1229921_661986813819335_105860452_n.jpg" />
+                <span class="box-owner">
+                    <a href="#">VinaSale</a>
+                    <span class="box-createdtime">1 tiếng trước</span>
+                </span>
+                <span class="box-tags">
+                    <span>&nbsp;</span>
+                    <a href="#">#Giảm giá</a>
+                </span>
+            </div>
+
+            <div class="box-avatar">
+                <img src="@url">
+                @*<span class="box-like">
+                    <img src="/UserFiles/Images/like.png" />
+                </span>
+                <span class="box-share">
+                    <img src="/UserFiles/Images/share.png" />
+                </span>*@
+                @*<div class="box-like box-overlay">
+                    <div class="center">
+                        <span class="box-count">303k</span>
+                        <span class="box-icon"><img src="/UserFiles/Images/like.png" /></span>
+                    </div>
+                </div>
+                <div class="box-share box-overlay">
+                    <div class="center">
+                        <span class="box-count clicked">303k</span>
+                        <span class="box-icon"><img src="/UserFiles/Images/share.png" /></span>
+                    </div>
+                </div>*@
+            </div>
+
+            <div class="box-header">
+                <span class="box-icon-postname">
+                    <img src="/UserFiles/Images/hot.png" />
+                    <span>Giảm giá hot</span>
+                </span>
+            </div>
+
+            <div class="box-shortdesc"><p>Sôi động mùa đông với chương ưu đãi cực hot! Giảm 50% tất cả các mặt hàng, dành cho các sản phẩm có giá từ 500.000 vnd.</p></div>
+
+        </div>
+        <div class="box-action">
+            <span class="box-like">
+                <span>312</span>
+                <img src="/UserFiles/Images/like.png" />
+            </span>
+            <span class="box-share">
+                <span>312</span>
+                <img src="/UserFiles/Images/share.png" />
+            </span>
+            <span class="box-comment">
+                <span>312</span>
+                <img src="/UserFiles/Images/comment.png" />
+            </span>
         </div>
     </div>
 }
-
-<h3>Kendo UI PanelBar</h3>
-<br />
-
-@(Html.Kendo().PanelBar()
-    .Name("IntroPanelBar")
-    .Items(items =>
-    {
-        items.Add()
-            .Text("Getting Started")
-            .Selected(true)
-            .Expanded(true)
-            .Content(@<text>
-                <p style="padding:0 1em">
-                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                    enables a clean separation of concerns and that gives you full control over markup
-                    for enjoyable, agile development. ASP.NET MVC includes many features that enable
-                    fast, TDD-friendly development for creating sophisticated applications that use
-                    the latest web standards.
-                    <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-                </p>
-            </text>);
-        items.Add()
-            .Text("Add NuGet packages and jump-start your coding")
-            .Content(@<text>
-                <p style="padding:0 1em">
-                    NuGet makes it easy to install and update free libraries and tools.
-                    <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-                </p>
-            </text>);
-        items.Add()
-            .Text("Find Web Hosting")
-            .Content(@<text>
-                <p style="padding:0 1em">
-                    You can easily find a web hosting company that offers the right mix of features
-                    and price for your applications.
-                    <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-                </p>
-            </text>);
-    })
-)
+</div>

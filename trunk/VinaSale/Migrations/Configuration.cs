@@ -23,10 +23,10 @@ namespace VinaSale.Migrations
             //  to avoid creating duplicate seed data. E.g.
 
             context.Users.AddOrUpdate(
-              new User { UserId = 1, UserName = "troyvnit", Password = "Asdcxz1+", DateOfBirth = new DateTime(1989, 6, 8)}
+              new User { UserId = 1, UserName = "troyvnit", Password = "Asdcxz1+", DateOfBirth = new DateTime(1989, 6, 8), ProfilePicture = "/UserFiles/Images/logo.png" }
             );
             context.Brands.AddOrUpdate(
-              new Brand { UserId = 1, BrandId = 1, BrandName = "Seft" }
+              new Brand { UserId = 1, BrandId = 1, BrandName = "Seft", Logo = "/UserFiles/Images/logo.png" }
             );
         }
     }

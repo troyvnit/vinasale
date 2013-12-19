@@ -9,6 +9,7 @@ namespace VinaSale.Models.ViewModels
         {
             CreatedDate = UpdatedDate = DateTime.Now;
             BrandId = 1;
+            PostAvatar = "/UserFiles/Images/logo.png";
         }
         public int PostId { get; set; }
         public string PostName { get; set; }

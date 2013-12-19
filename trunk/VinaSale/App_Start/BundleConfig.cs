@@ -41,6 +41,16 @@ namespace VinaSale
                       "~/ViewLibraries/kendo/Content/2013.3.1119/kendo.common-bootstrap.min.css",
                       "~/ViewLibraries/kendo/Content/2013.3.1119/kendo.bootstrap.min.css",
                       "~/ViewLibraries/kendo/Content/2013.3.1119/styles.css"));
+
+            bundles.Add(new StyleBundle("~/Content/FO").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/site.css",
+                      "~/Content/bootstrap-responsive.min.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/FO").Include(
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/jquery.masonry.min.js",
+                      "~/Scripts/base.js"));
         }
     }
 }
