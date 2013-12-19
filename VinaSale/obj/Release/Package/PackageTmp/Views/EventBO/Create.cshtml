@@ -1,0 +1,236 @@
+﻿@model VinaSale.Models.ViewModels.EventVM
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_BOLayout.cshtml";
+    var postAvatar = String.IsNullOrEmpty(Model.PostAvatar) ? Url.Content("/UserFiles/Images/logo.png") : Model.PostAvatar;
+    var tags = String.IsNullOrEmpty(Model.PostTags) ? "" : Model.PostTags;
+}
+<div id="example" class="container">
+    <section class="well">
+        <h2 class="ra-well-title">Trang này là gì?</h2>
+
+        <p>Đây là trang tạo mới bài viết admin</p>
+    </section>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <section class="well">
+            <h2 class="ra-well-title">Thông tin Post</h2>
+
+            <div class="form-horizontal form-widgets col-sm-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="occupation">Hình đại diện</label>
+                    <div class="col-sm-10">
+                        @Html.HiddenFor(model => model.PostId)
+                        @Html.HiddenFor(model => model.PostAvatar)
+                        <img id="avatar" src="@postAvatar" class="ra-avatar img-responsive" onclick="showImageBrowser();" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="PostName">Tên Post</label>
+                    <div class="col-sm-10">
+                        @Html.EditorFor(model => model.PostName)
+                        @Html.ValidationMessageFor(model => model.PostName)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="PostShortDescription">Mô tả ngắn</label>
+                    <div class="col-sm-10">
+                        @Html.EditorFor(model => model.PostShortDescription)
+                        @Html.ValidationMessageFor(model => model.PostShortDescription)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="bio">Mô tả chi tiết</label>
+                    <div class="col-sm-10">
+                        @Html.TextAreaFor(model => model.PostDescription, new {rows = "5"})
+                        @Html.ValidationMessageFor(model => model.PostDescription)
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr>
+            <div class="clearfix"></div>
+
+            <div class="form-horizontal form-widgets col-sm-12">
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="PostType">Loại Post</label>
+                    <div class="col-sm-10">
+                        <select name="PostType">
+                            @foreach (var postType in Enum.GetValues(typeof(VinaSale.Models.PostType)))
+{
+    var selected = Model.PostType.Equals(postType) ? "selected" : "";
+    <option @selected value="@postType">@postType</option>
+}
+                        </select>
+                        @Html.ValidationMessageFor(model => model.PostType)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="PostSize">Kích cỡ Post</label>
+                    <div class="col-sm-10">
+                        <select name="PostSize">
+                            @foreach (var postSize in Enum.GetValues(typeof(VinaSale.Models.PostSize)))
+                            {
+                                var selected = Model.PostSize.Equals(postSize) ? "selected" : "";
+                                <option @selected value="@postSize">@postSize</option>
+                            }
+                        </select>
+                        @Html.ValidationMessageFor(model => model.PostSize)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Priority">Độ ưu tiên</label>
+                    <div class="col-sm-10">
+                        @Html.EditorFor(model => model.Priority)
+                        @Html.ValidationMessageFor(model => model.Priority)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="PostTags">Nhãn</label>
+                    <div class="col-sm-10">
+                        <input type="text" value="@tags" name="PostTags" data-role="tagsinput" placeholder="Thêm nhãn" />
+                        @Html.ValidationMessageFor(model => model.PostTags)
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+<div class="clearfix"></div>
+
+            <div class="form-horizontal form-widgets col-sm-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="ContactInfo">Thông tin liên hệ</label>
+                    <div class="col-sm-10">
+                        @Html.TextAreaFor(model => model.ContactInfo, new { rows = "4" })
+                        @Html.ValidationMessageFor(model => model.ContactInfo)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="ContactInfo">Địa chỉ</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            @Html.TextBoxFor(model => model.Address, new { placeholder = "Địa chỉ:", @class = "form-control controls" })
+                            <span class="input-group-btn">
+                                <button class="btn btn-success" type="button">Go!</button>
+                            </span>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.Address)
+                        @Html.HiddenFor(model => model.Latitude)
+                        @Html.HiddenFor(model => model.Longitude)
+                        <div id="map-canvas"></div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="buttons-wrap">
+        <label for="IsActived">Duyệt</label>
+        @Html.EditorFor(model => model.IsActived)
+        <button class="k-button k-state-default">Cancel</button>
+        <button class="k-button k-state-default">Update</button>
+    </div>
+</section>
+    }
+</div>
+
+<script>
+    function initialize() {
+
+        var markers = [];
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        var lat = document.getElementById('Latitude').value;
+        var lng = document.getElementById('Longitude').value;
+        var defaultBounds = new google.maps.LatLngBounds(
+            new google.maps.LatLng(lat, lng),
+            new google.maps.LatLng(lat, lng));
+        map.fitBounds(defaultBounds);
+
+        // Create the search box and link it to the UI element.
+        var input = (
+            document.getElementById('Address'));
+
+        var searchBox = new google.maps.places.SearchBox(
+          (input));
+
+        // [START region_getplaces]
+        // Listen for the event fired when the user selects an item from the
+        // pick list. Retrieve the matching places for that item.
+        google.maps.event.addListener(searchBox, 'places_changed', function () {
+            var places = searchBox.getPlaces();
+
+            for (var i = 0, marker; marker = markers[i]; i++) {
+                marker.setMap(null);
+            }
+
+            // For each place, get the icon, place name, and location.
+            markers = [];
+            var bounds = new google.maps.LatLngBounds();
+            var place = places[0];
+                var image = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(34, 34),
+                    scaledSize: new google.maps.Size(25, 25)
+                };
+
+                // Create a marker for each place.
+                var marker = new google.maps.Marker({
+                    map: map,
+                    icon: image,
+                    title: place.name,
+                    position: place.geometry.location
+                });
+
+                markers.push(marker);
+
+                bounds.extend(place.geometry.location);
+
+                map.fitBounds(bounds);
+                document.getElementById('Latitude').value = place.geometry.location.pb;
+                document.getElementById('Longitude').value = place.geometry.location.qb;
+        });
+        // [END region_getplaces]
+
+        // Bias the SearchBox results towards places that are within the bounds of the
+        // current map's viewport.
+        google.maps.event.addListener(map, 'bounds_changed', function () {
+            var bounds = map.getBounds();
+            searchBox.setBounds(bounds);
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+    function overrideChangeImageBrowser() {
+        $("#avatar").attr("src", $("#selectedMediaUrl").val());
+        $("#PostAvatar").val($("#selectedMediaUrl").val());
+    }
+</script>
+<style>
+    #map-canvas {
+        width: 100%;
+        height: 400px;
+        margin: 10px 0;
+        padding: 0px;
+    }
+    #avatar {
+        max-width: 200px;
+        max-height: 200px;
+        cursor: pointer;
+    }
+</style>

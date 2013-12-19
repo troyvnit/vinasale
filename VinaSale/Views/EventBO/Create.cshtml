@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_BOLayout.cshtml";
-    var postAvatar = String.IsNullOrEmpty(Model.PostAvatar) ? "http://demos.kendoui.com/content/integration/bootstrap-integration/avatar.jpg" : Model.PostAvatar;
+    var postAvatar = String.IsNullOrEmpty(Model.PostAvatar) ? Url.Content("/UserFiles/Images/logo.png") : Model.PostAvatar;
     var tags = String.IsNullOrEmpty(Model.PostTags) ? "" : Model.PostTags;
 }
 <div id="example" class="container">
@@ -227,5 +227,10 @@
         height: 400px;
         margin: 10px 0;
         padding: 0px;
+    }
+    #avatar {
+        max-width: 200px;
+        max-height: 200px;
+        cursor: pointer;
     }
 </style>

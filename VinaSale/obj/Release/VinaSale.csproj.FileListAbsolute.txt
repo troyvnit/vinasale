@@ -1,0 +1,120 @@
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\VinaSale.dll.config
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\VinaSale.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\VinaSale.pdb
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Antlr3.Runtime.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\EntityFramework.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\EntityFramework.SqlServer.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Kendo.Mvc.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Newtonsoft.Json.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Net.Http.Formatting.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Helpers.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Http.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Http.WebHost.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Mvc.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Optimization.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Razor.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.WebPages.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.WebPages.Razor.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\WebGrease.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\EntityFramework.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\EntityFramework.SqlServer.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Kendo.Mvc.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Helpers.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Mvc.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Optimization.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Razor.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.WebPages.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.WebPages.Razor.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Newtonsoft.Json.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Antlr3.Runtime.pdb
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Net.Http.Formatting.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Http.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\System.Web.Http.WebHost.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\da-DK\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\de-DE\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\es-ES\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\obj\Release\VinaSale.Migrations.VNS.resources
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\obj\Release\VinaSale.csproj.GenerateResource.Cache
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\obj\Release\VinaSale.dll
+C:\Users\Troy Lee\Documents\Visual Studio 2013\Projects\VinaSale\VinaSale\obj\Release\VinaSale.pdb
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\VinaSale.dll.config
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\VinaSale.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\VinaSale.pdb
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Antlr3.Runtime.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\AutoMapper.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\AutoMapper.Net4.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\EntityFramework.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\EntityFramework.SqlServer.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Kendo.Mvc.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Microsoft.Web.Infrastructure.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Newtonsoft.Json.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Net.Http.Formatting.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Helpers.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Http.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Http.WebHost.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Mvc.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Optimization.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Razor.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.WebPages.Deployment.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.WebPages.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.WebPages.Razor.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\WebGrease.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\AutoMapper.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\EntityFramework.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\EntityFramework.SqlServer.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Kendo.Mvc.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Helpers.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Mvc.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Optimization.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Razor.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.WebPages.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.WebPages.Deployment.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.WebPages.Razor.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Newtonsoft.Json.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Antlr3.Runtime.pdb
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Net.Http.Formatting.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Http.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\System.Web.Http.WebHost.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\bg-BG\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\da-DK\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\de-DE\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\es-ES\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\fr-FR\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\nl-NL\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\pl-PL\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\pt-BR\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\pt-PT\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\ro-RO\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\ru-RU\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\sv-SE\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\uk-UA\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\bin\zh-CN\Kendo.Mvc.resources.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\obj\Release\VinaSale.Migrations.VNS.resources
+E:\Windows\Working\Projects\Vinasale\VinaSale\obj\Release\VinaSale.csproj.GenerateResource.Cache
+E:\Windows\Working\Projects\Vinasale\VinaSale\obj\Release\VinaSale.dll
+E:\Windows\Working\Projects\Vinasale\VinaSale\obj\Release\VinaSale.pdb
+E:\Windows\Working\Projects\Vinasale\VinaSale\obj\Release\VinaSale.csprojResolveAssemblyReference.cache

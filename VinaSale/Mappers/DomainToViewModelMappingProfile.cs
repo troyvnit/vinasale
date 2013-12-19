@@ -14,6 +14,8 @@ namespace VinaSale.Mappers
         protected override void Configure()
         {
             Mapper.CreateMap<Event, EventVM>();
+            Mapper.CreateMap<Event, EventForListVM>();
+            Mapper.CreateMap<Brand, BrandVM>();
         }
     }
 }
