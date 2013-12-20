@@ -20,7 +20,7 @@ function init_masonry(){
     var $container = $('#content');
 
     var gutter = 12;
-    var min_width = 305;
+    var min_width = 300;
     $container.imagesLoaded( function(){
         $container.masonry({
             itemSelector : '.box',
@@ -35,7 +35,8 @@ function init_masonry(){
                     box_width = containerWidth;
                 }
 
-                $('.box').width(box_width);
+                $('.col1').width(box_width);
+                $('.col2').width(box_width * 2 + 10);
 
                 return box_width;
               }

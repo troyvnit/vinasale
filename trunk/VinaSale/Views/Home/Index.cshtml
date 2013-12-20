@@ -9,8 +9,20 @@
     @for (int i = 1; i < 19; i++)
 {
     var url = "/UserFiles/Images/Agra-" + i + ".jpg";
-    <div class="box">
+    var col = i == 4 || i == 6 || i == 14 || i == 16 ? "col2" : "col1";
+    <div class="box @col">
         <div class="box-arrow">
+
+            <div class="box-header">
+                <span class="box-postname">
+                    Giảm giá hot
+                </span>
+                <span class="box-posttype"><img src="/UserFiles/Images/hot.png" /></span>
+            </div>
+
+            <div class="box-avatar">
+                <img src="@url">
+            </div>
 
             <div class="box-footer">
                 <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash4/1229921_661986813819335_105860452_n.jpg" />
@@ -24,38 +36,10 @@
                 </span>
             </div>
 
-            <div class="box-avatar">
-                <img src="@url">
-                @*<span class="box-like">
-                    <img src="/UserFiles/Images/like.png" />
-                </span>
-                <span class="box-share">
-                    <img src="/UserFiles/Images/share.png" />
-                </span>*@
-                @*<div class="box-like box-overlay">
-                    <div class="center">
-                        <span class="box-count">303k</span>
-                        <span class="box-icon"><img src="/UserFiles/Images/like.png" /></span>
-                    </div>
-                </div>
-                <div class="box-share box-overlay">
-                    <div class="center">
-                        <span class="box-count clicked">303k</span>
-                        <span class="box-icon"><img src="/UserFiles/Images/share.png" /></span>
-                    </div>
-                </div>*@
-            </div>
-
-            <div class="box-header">
-                <span class="box-icon-postname">
-                    <img src="/UserFiles/Images/hot.png" />
-                    <span>Giảm giá hot</span>
-                </span>
-            </div>
-
             <div class="box-shortdesc"><p>Sôi động mùa đông với chương ưu đãi cực hot! Giảm 50% tất cả các mặt hàng, dành cho các sản phẩm có giá từ 500.000 vnd.</p></div>
 
         </div>
+
         <div class="box-action">
             <span class="box-like">
                 <span>312</span>
