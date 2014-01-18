@@ -28,5 +28,6 @@ namespace VinaSale.Models.ViewModels
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
         public int BrandId { get; set; }
+        public virtual BrandVM Brand { get; set; }
     }
 }

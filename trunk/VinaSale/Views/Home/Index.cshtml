@@ -1,59 +1,69 @@
-﻿@{
+﻿@using VinaSale.Models
+@using VinaSale.Models.ViewModels
+@{
     ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_FOLayout.cshtml";
+    var posts = (IEnumerable<EventVM>) ViewBag.Posts;
 }
 
 
 
 <div id="content">
-    @for (int i = 1; i < 19; i++)
-{
-    var url = "/UserFiles/Images/Agra-" + i + ".jpg";
-    var col = i == 4 || i == 6 || i == 14 || i == 16 ? "col2" : "col1";
-    <div class="box @col">
-        <div class="box-arrow">
+    @if (posts != null)
+    {
+        foreach(var post in posts)
+    {
+        var col = post.PostSize == PostSize.Large ? "col2" : "col1";
+        var postTypeIcon = post.PostType == PostType.Discount ? "/UserFiles/Images/hot.png" : "/UserFiles/Images/hot.png";
+        <div class="box @col">
+            <div class="box-arrow">
 
-            <div class="box-header">
-                <span class="box-postname">
-                    Giảm giá hot
-                </span>
-                <span class="box-posttype"><img src="/UserFiles/Images/hot.png" /></span>
+                <div class="box-header">
+                    <span class="box-postname">
+                        @post.PostName
+                    </span>
+                    <span class="box-posttype"><img src="@postTypeIcon" /></span>
+                    <span class="box-like-button"><button></button></span>
+</div>
+
+                <div class="box-avatar">
+                    <img src="@post.PostAvatar">
+                </div>
+
+                <div class="box-footer">
+                    <img src="@post.Brand.Logo" />
+                    <span class="box-owner">
+                        <a href="#">@post.Brand.BrandName</a>
+                        <span class="box-createdtime">@post.UpdatedDate.ToString("g")</span>
+                    </span>
+                    @if (!string.IsNullOrEmpty(post.PostTags))
+                    {
+                        <span class="box-tags">
+                            <span>&nbsp;</span>
+                            <a href="#">#@post.PostTags</a>
+                        </span>
+                    }
+                </div>
+
+                <div class="box-shortdesc"><p>@post.PostShortDescription</p></div>
+
             </div>
 
-            <div class="box-avatar">
-                <img src="@url">
-            </div>
-
-            <div class="box-footer">
-                <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash4/1229921_661986813819335_105860452_n.jpg" />
-                <span class="box-owner">
-                    <a href="#">VinaSale</a>
-                    <span class="box-createdtime">1 tiếng trước</span>
+            <div class="box-action">
+                <span class="box-like">
+                    <span>0</span>
+                    <img src="/UserFiles/Images/like.png" />
                 </span>
-                <span class="box-tags">
-                    <span>&nbsp;</span>
-                    <a href="#">#Giảm giá</a>
+                <span class="box-share">
+                    <span>0</span>
+                    <img src="/UserFiles/Images/share.png" />
+                </span>
+                <span class="box-comment">
+                    <span>0</span>
+                    <img src="/UserFiles/Images/comment.png" />
                 </span>
             </div>
-
-            <div class="box-shortdesc"><p>Sôi động mùa đông với chương ưu đãi cực hot! Giảm 50% tất cả các mặt hàng, dành cho các sản phẩm có giá từ 500.000 vnd.</p></div>
-
         </div>
-
-        <div class="box-action">
-            <span class="box-like">
-                <span>312</span>
-                <img src="/UserFiles/Images/like.png" />
-            </span>
-            <span class="box-share">
-                <span>312</span>
-                <img src="/UserFiles/Images/share.png" />
-            </span>
-            <span class="box-comment">
-                <span>312</span>
-                <img src="/UserFiles/Images/comment.png" />
-            </span>
-        </div>
-    </div>
-}
+    }
+    }
 </div>
