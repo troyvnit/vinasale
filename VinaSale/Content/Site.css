@@ -64,7 +64,7 @@ body {
     color: #393939;
     font-size: 16px;
     padding: 10px;
-    background: url("http://hotgirls.com.vn/wp-content/themes/gridler/images/bg/patterns/pattern39.png") repeat;
+    background: #3f4649;
     border: solid transparent;
 }
 img {
@@ -241,7 +241,7 @@ width: 0;
 
 .box-arrow {
 	position: relative;
-    background-color: white;
+    background-color: #2d2f31;
     border-bottom: 1px solid rgba(0, 0, 0, 0.33);
 }
 .box-arrow:after, .box-arrow:before {
@@ -337,7 +337,7 @@ right: 10px;
 
 .box-shortdesc p{
     padding: 0 10px 20px;
-    color: #404040;
+    color: #dbdbdb;
     font-size: 13px;
     margin-bottom: 0;
     line-height: 1.4;
@@ -359,7 +359,7 @@ right: 10px;
 }
 
 .box-footer .box-createdtime {
-    color: #999;
+    color: #9e9e9e;
 font-size: 12px;
 display: block;
 height: 18px;
@@ -372,7 +372,7 @@ vertical-align: middle;
 }
 
 .box-footer .box-owner a{
-    color: #262626;
+    color: #23a86d;
 font-weight: bold;
 font-size: 14px;
 height: 18px;
@@ -382,6 +382,30 @@ vertical-align: top;
 
 .center {
     text-align: center;
+}
+
+.box-like-button button{
+    width: 24px;
+    height: 30px;
+    border: none;
+    background: url('/UserFiles/Images/like-before.png');
+    background-size: cover;
+}
+
+.box-like-button button:hover{
+    width: 24px;
+    height: 30px;
+    border: none;
+    background: url('/UserFiles/Images/like-hover.png');
+    background-size: cover;
+}
+
+.box-like-button button:active{
+    width: 24px;
+    height: 30px;
+    border: none;
+    background: url('/UserFiles/Images/like-before.png');
+    background-size: cover;
 }
 
 footer {

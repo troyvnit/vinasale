@@ -44,6 +44,7 @@ namespace VinaSale
 
             bundles.Add(new StyleBundle("~/Content/FO").Include(
                       "~/Content/bootstrap.min.css",
+                      "~/Content/buttons.css",
                       "~/Content/site.css",
                       "~/Content/bootstrap-responsive.min.css"));
 
